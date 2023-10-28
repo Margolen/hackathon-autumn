@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./FlashCard.scss";
 
-function FlashCard({ task, onFlip }) {
+export default function FlashCard({ task, onFlip }) {
   const [flipped, setFlipped] = useState(false);
+
+  useEffect(() => {
+    console.log(task);
+  }, [task]);
 
   function flip() {
     setFlipped(true);
@@ -11,16 +15,15 @@ function FlashCard({ task, onFlip }) {
   }
 
   return (
-    <div styleName="flash-card">
-      <div styleName="main">
-        <div styleName="english">{word.english}</div>
-        <div styleName="transcription">{word.transcription}</div>
+    <div className="flash-card">
+      <div className="main">
+        <div className="question">{task.question || ""}</div>
       </div>
-      <div styleName="action">
+      <div className="action">
         {flipped ? (
-          <div styleName="russian">{word.russian}</div>
+          <div className="answer">{task.answer || ""}</div>
         ) : (
-          <button styleName="flip-button" onClick={flip} ref={flipButtonRef}>
+          <button className="flip-button" onClick={flip}>
             Проверить
           </button>
         )}
