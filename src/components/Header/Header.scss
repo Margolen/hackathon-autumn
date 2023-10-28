@@ -1,0 +1,36 @@
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  &-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__right-block {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  &__link {
+    color: #696871;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: normal;
+    &:hover {
+      color: #19191b;
+    }
+  }
+  &-button {
+    padding: 19px 83px;
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 700;
+
+    background-color: #746fed;
+    border: none;
+    border-radius: 10px;
+  }
+}
