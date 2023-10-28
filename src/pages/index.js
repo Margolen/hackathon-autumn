@@ -1,6 +1,6 @@
-import PageFlashCardDeck from "./PageFlashCardDeck/PageFlashCardDeck";
+import PageFlashCard from "./PageFlashCard/PageFlashCard";
 import PageHome from "./PageHome/PageHome";
-import PageWordList from "./PageWordList/PageWordList";
-import PageError from "./PageError/PageError";
+import PageQuiz from "./PageQuiz/PageQuiz";
+import PageSelection from "./PageSelection/PageSelection";
 
-export { PageFlashCardDeck, PageHome, PageWordList, PageError };
+export { PageFlashCard, PageHome, PageQuiz, PageSelection };
