@@ -9,4 +9,11 @@ a {
 .app {
   max-width: 1200px;
   margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
 }
