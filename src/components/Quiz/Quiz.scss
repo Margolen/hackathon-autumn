@@ -1,28 +1,33 @@
-.quiz-card {
-  width: 700px;
-  height: 400px;
-  background-color: #b7d2ef;
-  display: flex;
-  justify-content: center;
-  font-size: 36px;
-  font-weight: 400;
-  text-align: center;
-  color: black;
-}
-
-.quiz-line {
-  border-bottom: 1px solid rgb(0, 0, 0);
-  border-top: 1px solid rgb(0, 0, 0);
-  width: 650px;
-}
-
-.quiz-checkbox {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 31.25px;
-  color: black;
-}
-
-.quiz-wrapper {
-  min-width: 500px;
+.quiz {
+  &-wrapper {
+    min-width: 500px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+  }
+  &-card {
+    width: 700px;
+    height: 400px;
+    background-color: #b7d2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+  }
+  &-line {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+  &-checkbox {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31.25px;
+    color: black;
+  }
 }

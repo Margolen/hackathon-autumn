@@ -9,8 +9,8 @@ function Quiz() {
       <div>
         {easyList.map(function (card, id) {
           return (
-            <div>
-              <div class="quiz-line">
+            <div className="quiz-item">
+              <div className="quiz-line">
                 <div className="quiz-card">{card.question}</div>
               </div>
               <fieldset>
